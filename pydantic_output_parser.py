@@ -38,5 +38,5 @@ template = PromptTemplate(
 
 chain = template | model | parser
 result = chain.invoke({'category': 'sports'})
-print('===> result', result.title)
+print('===> result title:', result.title)
 
